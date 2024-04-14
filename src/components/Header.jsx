@@ -32,8 +32,7 @@ const Header = () => {
     <div
       className={`fixed header top-0 left-0 w-full z-50 transition-all border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
         openNavigation ? "bg-n-8" : "bg-n-8/10 backdrop-blur-sm"
-      }`}
-    >
+      }`}>
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="w-[19rem] xl:mr-8 flex" href="#hero">
           <img src={codeplanet} width={70} height={40} alt="codeplanet" />
@@ -62,9 +61,6 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-        {/* <Button className="hidden lg:flex" href="" linkTo="login">
-          Try It!
-        </Button> */}
         <Profile />
         <ToastContainer className="mt-5 lg:mt-[5rem]"
           position="top-right"
@@ -88,8 +84,8 @@ const Header = () => {
           <MenuSvg openNavigation={openNavigation} />
         </Button>
         
+        </div>
       </div>
-    </div>
     </>
   );
 };

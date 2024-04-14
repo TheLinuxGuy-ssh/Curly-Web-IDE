@@ -7,24 +7,24 @@ import {
   } from "react-router-dom";
   
 const EditorBtn = ({ className, href, onClick, children, px, white, linkTo }) => {
+  
   const spanClasses = "";
-
   const renderButton = () => (
     <Link to={linkTo}>
-    <button className={"editor-button p-2 px-4 px-" + px} onClick={onClick}>
-      <span className={spanClasses}>{children}</span>
-    </button>
+      <button className={"editor-button p-2 px-4 px-" + px} onClick={onClick}>
+        <span className={spanClasses}>{children}</span>
+      </button>
     </Link>
   );
 
   const renderLink = () => (
     <a href={href}>
       <button className="editor-button">
-      <span className={spanClasses}>{children}</span>
-    </button>
+        <span className={spanClasses}>{children}</span>
+      </button>
     </a>
   );
-
+  
   return href ? renderLink() : renderButton();
 };
 

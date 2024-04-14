@@ -4,9 +4,7 @@ export default function Component() {
     return (
       <>
         <Helmet>
-          <script
-            src="./script-add.js"
-          ></script>
+          <script src="./script-add.js"></script>
         </Helmet>
         
       </>

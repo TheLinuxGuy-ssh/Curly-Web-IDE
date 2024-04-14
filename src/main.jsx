@@ -35,12 +35,11 @@ const router = createBrowserRouter([
         element: (
             <React.StrictMode>
               <Auth0Provider
-    domain="dev-6jf50i3o4tbq4h72.us.auth0.com"
-    clientId="CZh6VnNOjRfiXEo9Nj1NW2Wk0tEJH32P"
-    authorizationParams={{
-      redirect_uri: window.location.origin
-    }}
-  >
+                domain="dev-6jf50i3o4tbq4h72.us.auth0.com"
+                clientId="CZh6VnNOjRfiXEo9Nj1NW2Wk0tEJH32P"
+                authorizationParams={{
+                  redirect_uri: window.location.origin
+                }}>
                 <Editor />
               </Auth0Provider>
             </React.StrictMode>
@@ -49,7 +48,7 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
- <RouterProvider router={router} />
-    );
+  <RouterProvider router={router} />
+);
 
 

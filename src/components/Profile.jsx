@@ -24,11 +24,11 @@ const Profile = () => {
         draggable: true,
         progress: undefined,
         theme: "dark",
-        })
-) : (
+    })
+  ) : (
 
     " "
-)}
+  )}
 
   return (
     <div className="flex justify-center align-center w-[10rem]">

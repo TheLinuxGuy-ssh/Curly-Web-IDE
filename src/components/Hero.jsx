@@ -17,17 +17,17 @@ const Hero = () => {
         data-aos-delay="1000"
         data-aos-anchor-placement="top top"
       />
+        </div>
       </div>
-      </div>
-      <div className="hero-content ">
-        {hero.map((item) => (
+        <div className="hero-content ">
+          {hero.map((item) => (
             <h1 key={item.id} className={item.class} data-aos={item.transition} data-aos-delay={item.delay} data-aos-anchor-placement="top top">{item.text}</h1>
-            ))}
-      </div>
+          ))}
+        </div>
       <div className="scroll flex justify-center mb-10 translate-y-[1rem]">
-      <Button2 className="button-primary transition-transform hover:translate-y-1 flex justify-center" href="#about">
-      <i className="fa fa-arrow-down"></i>
-      </Button2>
+        <Button2 className="button-primary transition-transform hover:translate-y-1 flex justify-center" href="#about">
+          <i className="fa fa-arrow-down"></i>
+        </Button2>
       </div>
     </div>
   );

@@ -4,11 +4,10 @@ import Button from "./Button";
 
 const LoginButton = ({children}) => {
   const { loginWithRedirect } = useAuth0();
-
   return (
     <Button onClick={() => loginWithRedirect()}>
       {children}
-  </Button>
+    </Button>
   )
 };
 

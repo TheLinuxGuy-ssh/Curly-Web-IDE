@@ -5,18 +5,17 @@ AOS.init();
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Who from "./components/Who"
-import Script from "./components/Script"
+import Script from "./components/Scripts"
 
 const App = () => {
   return (
     <>
-      <Script />
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <Hero />
         <Who />
       </div>
-
+      <Script />
       <ButtonGradient />
     </>
   );
