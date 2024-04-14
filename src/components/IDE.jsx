@@ -9,11 +9,15 @@ const IDE = () => {
     const { logout } = useAuth0();
     const { user, isAuthenticated, isLoading } = useAuth0();
     return (
-        <div className="master-container overflow-hidden">
-            <Sidebar />
+        <div className="master-container">
             <Topbar />
-            <Code />
-            <Terminal />
+            <div className="contentContainer">
+                <Sidebar />
+                <div className="content">
+                    <Code />
+                    <Terminal />
+                </div>
+            </div>
         </div>
     )
 }

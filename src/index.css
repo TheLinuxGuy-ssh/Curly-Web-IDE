@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
@@ -597,9 +598,29 @@ box-shadow: 0px 0px 36px 1px rgba(238, 238, 238, 0.185);
   border: 1px solid #696969;
   border-radius: 1rem;
 }
+
 .master-container {
   display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
 }
-.sidebar {
-  resize: horizontal;
+.topbar {
+  height: 100px;
+  background-color: var(--purple) !important;
 }
+
+.contentContainer { display: flex; flex: 3; flex-direction: row;}
+
+.sidebar { flex: 1; }
+
+.code {
+  background-color: #AC6AFF;
+  flex: 1;
+}
+.terminal {
+  flex: 2;
+}
+
+.content { flex: 2; background-color: #121213; display: flex; flex-direction: column;}
+

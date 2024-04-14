@@ -11,7 +11,7 @@ const EditorBtn = ({ className, href, onClick, children, px, white, linkTo }) =>
 
   const renderButton = () => (
     <Link to={linkTo}>
-    <button className="editor-button p-2 pl-4 pr-4" onClick={onClick}>
+    <button className={"editor-button p-2 px-4 px-" + px} onClick={onClick}>
       <span className={spanClasses}>{children}</span>
     </button>
     </Link>
