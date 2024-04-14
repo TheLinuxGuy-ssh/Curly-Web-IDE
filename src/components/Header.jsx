@@ -13,7 +13,7 @@ const Header = () => {
 
   const toggleNavigation = () => {
     if (openNavigation) {
-      setOpenNavigation(false);9
+      setOpenNavigation(false);
       enablePageScroll();
     } else {
       setOpenNavigation(true);
@@ -81,7 +81,7 @@ const Header = () => {
           px="px-3"
           onClick={toggleNavigation}
         >
-          <MenuSvg openNavigation={openNavigation} />
+  6        <MenuSvg openNavigation={openNavigation} />
         </Button>
         
         </div>

@@ -300,7 +300,7 @@ box-shadow: 0px 0px 36px 1px rgba(238, 238, 238, 0.185);
 }
 .topbar {
   height: 100px;
-  background-color: var(--purple) !important;
+  background-color: #121213;
 }
 
 .contentContainer {
@@ -309,10 +309,10 @@ box-shadow: 0px 0px 36px 1px rgba(238, 238, 238, 0.185);
   flex-direction: row;
 }
 
-.sidebar { flex: 1; }
+.sidebar { flex: 1; background-color: #121213;}
 
 .code {
-  background-color: #AC6AFF;
+  background-color: #1f1f1f;
   flex: 3;
 }
 .terminal {
@@ -321,7 +321,6 @@ box-shadow: 0px 0px 36px 1px rgba(238, 238, 238, 0.185);
 
 .content {
   flex: 2; 
-  background-color: #121213;
   display: flex;
   flex-direction: column;
 }
