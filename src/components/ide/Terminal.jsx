@@ -8,12 +8,12 @@ const Terminal = () => {
     height: "20%",
   }}
   minHeight="0"
-  maxHeight="20vh"
+  maxHeight="40%"
   enable={{
     top: true
-  }} className="terminal"
+  }}
 >
-        <div>
+        <div className="terminal">
             Terminal
         </div>
         </Resizable>

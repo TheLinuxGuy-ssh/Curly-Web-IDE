@@ -616,7 +616,7 @@ box-shadow: 0px 0px 36px 1px rgba(238, 238, 238, 0.185);
 
 .code {
   background-color: #AC6AFF;
-  flex: 1;
+  flex: 3;
 }
 .terminal {
   flex: 2;
