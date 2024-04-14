@@ -5,8 +5,8 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
-import LoginButton from "./Login";
 import Profile from "./Profile";
+import { ToastContainer } from "react-toastify";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -66,6 +66,20 @@ const Header = () => {
           Try It!
         </Button> */}
         <Profile />
+        <ToastContainer className="mt-5 lg:mt-[5rem]"
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+
+          draggable
+          pauseOnHover
+          theme="dark"
+
+          />
         <Button
           className="ml-auto lg:hidden"
           px="px-3"
