@@ -427,7 +427,7 @@ border: 1px solid #696969;
     opacity var(--px-dropdown-transition-duration) ease;
 }
 .right-topbar .editor-dropdown-panel{
-  left: -8rem;
+  left: -4.5rem;
   text-align: right;
 }
 .editor-dropdown.active .editor-dropdown-panel {

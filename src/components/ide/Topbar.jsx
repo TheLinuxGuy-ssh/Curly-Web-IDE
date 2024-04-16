@@ -1,8 +1,10 @@
 import EditorBtn from "../EditorBtn";
+import { useAuth0 } from "@auth0/auth0-react";
 import { moon } from "../../assets"
 import Scripts from "../Scripts";
 
 const Topbar = () => {
+  const { logout } = useAuth0();
     return (
         <>
         <Scripts />
@@ -58,8 +60,8 @@ const Topbar = () => {
   </div>
   <div class="editor-dropdown-panel">
     <ul>
-      <li data-value="value1">Find</li>
-      <li data-value="value2">Toggle Sidebar</li>
+      <li data-value="value1">Profile</li>
+      <li data-value="value2" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</li>
     </ul>
   </div>
 </div>
