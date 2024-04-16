@@ -1,4 +1,3 @@
-import EditorBtn from "./EditorBtn";
 import { useAuth0 } from "@auth0/auth0-react";
 import Sidebar from "./ide/Sidebar";
 import Topbar from "./ide/Topbar";
