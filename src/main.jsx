@@ -23,8 +23,7 @@ const router = createBrowserRouter([
     clientId="CZh6VnNOjRfiXEo9Nj1NW2Wk0tEJH32P"
     authorizationParams={{
       redirect_uri: window.location.origin
-    }}
-  >
+    }}>
       <App />
       </Auth0Provider>
   </React.StrictMode>

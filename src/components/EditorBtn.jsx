@@ -5,16 +5,32 @@ import {
     Route,
     Link,
   } from "react-router-dom";
+import { curlybtn } from "../constants"
+import Scripts from "./Scripts";
   
-const EditorBtn = ({ className, href, onClick, children, px, white, linkTo }) => {
-  
+const EditorBtn = ({ className, href, onClick, children, px, white, linkTo, list }) => {
+  <Scripts />
   const spanClasses = "";
   const renderButton = () => (
-    <Link to={linkTo}>
-      <button className={"editor-button p-2 px-4 px-" + px} onClick={onClick}>
-        <span className={spanClasses}>{children}</span>
-      </button>
-    </Link>
+    <div className="editorbtn editor-dropdown curly-main-btn">
+  <input className="editor-dropdown-value" type="hidden" />
+  <div className="editor-dropdown-input">
+  {children}
+    <icon-quix icon="chevron-down"></icon-quix>
+  </div>
+  <div className="editor-dropdown-panel">
+    <ul>
+      
+      {list.map((item) => (
+              <li
+                key={item.id}
+              >
+                {item.text}
+              </li>
+            ))}
+    </ul>
+  </div>
+</div>
   );
 
   const renderLink = () => (

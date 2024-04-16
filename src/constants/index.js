@@ -36,3 +36,19 @@ export const hero = [
     delay: 500,
   },
 ];
+
+export const curlybtn = [
+  {
+    id: '0',
+    text: "Like this work",
+    onclick: "",
+    href: ""
+    
+  }, 
+  {
+    id: '1',
+    text: "Landing Page",
+    onclick: "",
+    href: ""
+  }
+]
