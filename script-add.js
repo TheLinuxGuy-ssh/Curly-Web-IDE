@@ -32,15 +32,6 @@ const initpXDropdown = () => {
       event.stopPropagation();
       item.classList.toggle("active");
     });
-    dropdownPanelOptions.forEach((dropdownPanelOptionItem) => {
-      dropdownPanelOptionItem.addEventListener("click", () => {
-        dropdownInput.querySelector("input").value =
-          dropdownPanelOptionItem.innerHTML;
-        dropdownValue.value = dropdownPanelOptionItem.getAttribute(
-          "data-value"
-        );
-      });
-    });
   });
 };
 initpXDropdown();

@@ -332,10 +332,11 @@ box-shadow: 0px 0px 36px 1px rgba(238, 238, 238, 0.185);
   float: right;
   justify-self: flex-end
 }
-.shadow-glow {
+.curly-main-btn {
   -webkit-box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.356);
 -moz-box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.356);
 box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.356);
+border: 1px solid #696969;
 }
 
 
@@ -353,13 +354,13 @@ box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.356);
   --px-dropdown-color-bg: rgb(10, 15, 25);
   --px-dropdown-color-panelbg: rgb(46, 46, 46);
   --px-dropdown-color-panelfont: #fff;
-  --px-dropdown-color-panelhover: rgb(235, 237, 243);
+  --px-dropdown-color-panelhover: rgba(37, 118, 138, 0.486);
 
   --px-color-font: rgb(245, 247, 250);
   --px-color-bodybg: rgb(19, 26, 41);
 
-  --px-dropdown-width: 240px;
-  --px-dropdown-height: 46px;
+  --px-dropdown-width: auto;
+  --px-dropdown-height: auto;
   --px-dropdown-transition-duration: 300ms;
   --px-dropdown-iconsize: 18px;
 
@@ -374,15 +375,16 @@ box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.356);
   position: relative;
   width: var(--px-dropdown-width);
   height: var(--px-dropdown-height);
+  
+  border-radius: 1rem;
+  padding: 1vh 1.25vh;
+  transition: 0.25s background-color;
+  margin-right: 1rem;
 }
 
 .editor-dropdown-input {
   width: 100%;
   height: 100%;
-  border: 1px solid;
-  border-color: var(--px-dropdown-color-border);
-  border-radius: 5px;
-  background-color: var(--px-dropdown-color-bg);
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -390,6 +392,10 @@ box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.356);
   cursor: pointer;
   transition: border-color var(--px-dropdown-transition-duration) ease;
 }
+.editor-dropdown.active {
+  background-color: #ffffff2a;
+}
+
 .editor-dropdown.active .editor-dropdown-input {
   border-color: var(--px-dropdown-color-border-active);
 }
@@ -417,7 +423,7 @@ box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.356);
   position: absolute;
   margin-top: 1rem;
   z-index: 10;
-  width: 100%;
+  width:max-content;
   left: 0;
   top: calc(100% + 50px);
   border: 1px solid;

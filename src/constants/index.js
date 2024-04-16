@@ -37,6 +37,18 @@ export const hero = [
   },
 ];
 
-export const profiledrop = [
-  'one', 'two', 'three'
-];
+export const curlybtn = [
+  {
+    id: '0',
+    text: "Like this work",
+    onclick: "",
+    href: ""
+    
+  }, 
+  {
+    id: '1',
+    text: "Landing Page",
+    onclick: "",
+    href: ""
+  }
+]
