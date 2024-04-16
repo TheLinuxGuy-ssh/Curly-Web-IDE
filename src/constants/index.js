@@ -36,3 +36,7 @@ export const hero = [
     delay: 500,
   },
 ];
+
+export const profiledrop = [
+  'one', 'two', 'three'
+];
