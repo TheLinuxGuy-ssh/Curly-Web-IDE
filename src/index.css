@@ -475,12 +475,9 @@ border: 1px solid #696969;
   cursor: pointer;
   z-index: 1;
 }
-.felix, .felix *{
-  transition: 5s all ease-in-out !important;
-}
 .felix-body {
   position: absolute;
-  top: 7.6rem;
+  top: 6.4rem;
   width: 110px;
   border-radius: 45%;
   border-top-left-radius: 0;
@@ -490,10 +487,26 @@ border: 1px solid #696969;
   border-top: 0;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
+.felix-hand {
+  border: 3px solid #fff;
+  position: absolute;
+  width: 16px;
+  height: 7rem;
+  border-radius: 45%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.felix-hand.right {
+  top: 0.4rem;
+  left: -2rem;
+}
+.felix-hand.left {
+  top: 0.4rem;
+  right: -2rem;
+}
 .felix::before {
   content: '';
   position: absolute;
-  top: 6.75rem;
+  top: 5.5rem;
   left: 0rem;
   padding: 0;
   width: 106%;

@@ -7,7 +7,8 @@ const Code = () => {
         <div class="eye right"></div>
       </div>
       <div className="felix-body">
-        
+      <div className="felix-hand right"></div>
+      <div className="felix-hand left"></div>  
       </div>
     </div>
         </div>
