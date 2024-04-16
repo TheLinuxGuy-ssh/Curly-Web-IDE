@@ -17,21 +17,31 @@ function parallaxed(e) {
 
 const initpXDropdown = () => {
   const dropdownElements = document.querySelectorAll(".editor-dropdown");
+
+  // Close all dropdowns when clicking anywhere on the page
   window.addEventListener("click", () => {
     dropdownElements.forEach((item) => {
       item.classList.remove("active");
     });
   });
+
+  // Toggle individual dropdowns
   dropdownElements.forEach((item) => {
-    const dropdownValue = item.querySelector(".editor-dropdown-value");
     const dropdownInput = item.querySelector(".editor-dropdown-input");
-    const dropdownPanelOptions = item.querySelectorAll(
-      ".editor-dropdown-panel ul li"
-    );
+
     dropdownInput.addEventListener("click", (event) => {
       event.stopPropagation();
+      // Close other open dropdowns
+      dropdownElements.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove("active");
+        }
+      });
+      // Toggle the clicked dropdown
       item.classList.toggle("active");
     });
   });
 };
+
 initpXDropdown();
+

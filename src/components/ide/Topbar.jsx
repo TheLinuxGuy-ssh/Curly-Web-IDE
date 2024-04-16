@@ -6,7 +6,7 @@ const Topbar = () => {
     return (
         <>
         <Scripts />
-        <div className="topbar flex p-2">
+        <div className="topbar flex pb-2 pt-2 pl-2 pr-2">
             <div class="editorbtn editor-dropdown curly-main-btn">
   <input class="editor-dropdown-value" type="hidden" />
   <div class="editor-dropdown-input">
@@ -48,6 +48,21 @@ const Topbar = () => {
       <li data-value="value2">Toggle Sidebar</li>
     </ul>
   </div>
+</div>
+<div className="right-topbar flex justify-end w-full">
+<div class="editorbtn editor-dropdown border-topbar-item">
+  <input class="editor-dropdown-value topbar-profile" type="hidden" />
+  <div class="editor-dropdown-input">
+  <i className="fa fa-user"></i>
+    <icon-quix icon="chevron-down"></icon-quix>
+  </div>
+  <div class="editor-dropdown-panel">
+    <ul>
+      <li data-value="value1">Find</li>
+      <li data-value="value2">Toggle Sidebar</li>
+    </ul>
+  </div>
+</div>
 </div>
         </div>
         </>
