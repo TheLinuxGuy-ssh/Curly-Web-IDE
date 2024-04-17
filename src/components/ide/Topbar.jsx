@@ -1,12 +1,14 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import { moon } from "../../assets"
 import Scripts from "../Scripts";
+import { Helmet } from "react-helmet"
 
 const Topbar = () => {
-  const { logout } = useAuth0();
     return (
         <>
-        
+        <Helmet>
+          <script type="application/javascript" src="./script-add.js" />
+        </Helmet>
         <div className="topbar flex pb-2 pt-2 pl-2 pr-2">
             <div className="editorbtn editor-dropdown curly-main-btn">
   <input className="editor-dropdown-value" type="hidden" />
@@ -79,9 +81,9 @@ const Topbar = () => {
 </div>
 </div>
         </div>
-        <Scripts />
         </>
     )
+    
 }
 
 export default Topbar;
