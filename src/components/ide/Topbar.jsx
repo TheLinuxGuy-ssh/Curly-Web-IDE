@@ -50,6 +50,19 @@ const Topbar = () => {
     </ul>
   </div>
 </div>
+<div className="editorbtn editor-dropdown">
+  <input className="editor-dropdown-value" type="hidden" />
+  <div className="editor-dropdown-input">
+  Terminal
+    <icon-quix icon="chevron-down"></icon-quix>
+  </div>
+  <div className="editor-dropdown-panel">
+    <ul>
+      <li data-value="value1">New Terminal</li>
+      <li data-value="value2">Run Task</li>
+    </ul>
+  </div>
+</div>
 <div className="right-topbar flex justify-end w-full">
 <div className="editorbtn editor-dropdown border-topbar-item">
   <input className="editor-dropdown-value topbar-profile" type="hidden" />
