@@ -5,7 +5,7 @@ const Who = () => {
         <section className="who-we-are m-9 mt-[11rem] ml-[3rem] mr-[3rem] mb-[30rem]" id="about">
             <div className="w-full flex just justify-center">
                 <div className="list-bullet"></div>
-                    <h1 className="text-[3vw] mb-[7rem]">What is CurlyIDE?</h1>
+                    <h1 className="text-[3vw] mb-[7rem] title-curly">What is CurlyIDE?</h1>
             </div>
             <div className="w-[100%] flex">
             <div className="w-[60%]">
@@ -15,7 +15,9 @@ const Who = () => {
                 </h1>
             </div>
             <div className="w-[40%] ">
-                
+                <div className="grid">
+                    
+                </div>
             </div>
             </div>
         </section>

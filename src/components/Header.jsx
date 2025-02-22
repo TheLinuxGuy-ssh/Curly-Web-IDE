@@ -33,7 +33,7 @@ const Header = () => {
       className={`fixed header top-0 left-0 w-full z-50 transition-all border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
         openNavigation ? "bg-n-8" : "bg-n-8/10 backdrop-blur-sm"
       }`}>
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-2">
         <a className="w-[19rem] xl:mr-8 flex" href="#hero">
           <img src={codeplanet} width={70} height={40} alt="codeplanet" />
           <h1 className="font-tt font-bold tracking-widest my-6">CurlyIDE<span className="hidden lg:inline md:inline sm:inline"></span></h1>
@@ -52,7 +52,7 @@ const Header = () => {
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+                } px-3 py-1 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
               >
                 {item.title}
               </a>
